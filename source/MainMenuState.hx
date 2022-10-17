@@ -49,7 +49,6 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
-		WeekData.loadTheFirstEnabledMod();
 
 		#if desktop
 		// Updating Discord Rich Presence
@@ -154,8 +153,8 @@ class MainMenuState extends MusicBeatState
 		#end
 
 		#if android
-		addVirtualPad(UP_DOWN, A_B); // no editors since idk what will happen honestly
-		#end
+		addVirtualPad(UP_DOWN, A_B_E); 
+        	#end
 
 		super.create();
 	}
